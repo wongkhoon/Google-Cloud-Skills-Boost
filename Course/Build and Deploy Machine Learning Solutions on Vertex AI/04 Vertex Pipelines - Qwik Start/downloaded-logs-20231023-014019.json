@@ -1,0 +1,2603 @@
+[
+  {
+    "textPayload": "Waiting for job to be provisioned.",
+    "insertId": "1w9cpold2gv6",
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "service"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:10.026513611Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/endpoint": "",
+      "ml.googleapis.com/job_state": "QUEUED"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/ml.googleapis.com%2F7361657851825094656",
+    "receiveTimestamp": "2023-10-22T17:00:11.299255356Z"
+  },
+  {
+    "textPayload": "Waiting for training program to start.",
+    "insertId": "1w9cpold2gv7",
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656",
+        "task_name": "service"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:10.311057957Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/endpoint": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/ml.googleapis.com%2F7361657851825094656",
+    "receiveTimestamp": "2023-10-22T17:00:11.299255356Z"
+  },
+  {
+    "textPayload": "Job is preparing.",
+    "insertId": "1w9cpold2gvj",
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "service"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:12.438414255Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/endpoint": "",
+      "ml.googleapis.com/job_state": "PREPARING"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/ml.googleapis.com%2F7361657851825094656",
+    "receiveTimestamp": "2023-10-22T17:00:13.278468658Z"
+  },
+  {
+    "textPayload": "Job is running.",
+    "insertId": "1w9cpold2gwn",
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "service",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:23.164210766Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/job_state": "RUNNING",
+      "ml.googleapis.com/endpoint": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/ml.googleapis.com%2F7361657851825094656",
+    "receiveTimestamp": "2023-10-22T17:00:24.285219505Z"
+  },
+  {
+    "insertId": "1w9gbb4fbn98iz",
+    "jsonPayload": {
+      "levelname": "INFO",
+      "message": "--init.optimization_prediction_type"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:24.150026169Z",
+    "severity": "INFO",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/zone": "us-central1-b"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:00:58.689401955Z"
+  },
+  {
+    "insertId": "1w9gbb4fbn98j0",
+    "jsonPayload": {
+      "levelname": "INFO",
+      "message": "classification"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:24.150103245Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_type": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:00:58.689401955Z"
+  },
+  {
+    "insertId": "1w9gbb4fbn98j1",
+    "jsonPayload": {
+      "message": "--method.budget_milli_node_hours",
+      "levelname": "INFO"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "workerpool0-0"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:24.150112746Z",
+    "severity": "INFO",
+    "labels": {
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_type": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:00:58.689401955Z"
+  },
+  {
+    "insertId": "1w9gbb4fbn98j2",
+    "jsonPayload": {
+      "message": "1000",
+      "levelname": "INFO"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:24.150119297Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/job_id/log_area": "root"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:00:58.689401955Z"
+  },
+  {
+    "insertId": "1w9gbb4fbn98j3",
+    "jsonPayload": {
+      "message": "--method.target_column",
+      "levelname": "INFO"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:24.150126201Z",
+    "severity": "INFO",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:00:58.689401955Z"
+  },
+  {
+    "insertId": "1w9gbb4fbn98j4",
+    "jsonPayload": {
+      "message": "Class",
+      "levelname": "INFO"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:24.150132412Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_id": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:00:58.689401955Z"
+  },
+  {
+    "insertId": "1w9gbb4fbn98j5",
+    "jsonPayload": {
+      "message": "--resource_name_output_artifact_uri",
+      "levelname": "INFO"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:24.150138659Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_id": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:00:58.689401955Z"
+  },
+  {
+    "insertId": "1w9gbb4fbn98j6",
+    "jsonPayload": {
+      "message": "gs://qwiklabs-gcp-03-0f91e49b4fd6-bucket/pipeline_root/780638309579/automl-tab-beans-training-v2-20231022165653/automltabulartrainingjob-run_4950971529820110848/model",
+      "levelname": "INFO"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:24.150145945Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/trial_type": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:00:58.689401955Z"
+  },
+  {
+    "insertId": "1w9gbb4fbn98j7",
+    "jsonPayload": {
+      "levelname": "INFO",
+      "message": "--init.project"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:24.150152851Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/zone": "us-central1-b"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:00:58.689401955Z"
+  },
+  {
+    "insertId": "1w9gbb4fbn98j8",
+    "jsonPayload": {
+      "levelname": "INFO",
+      "message": "qwiklabs-gcp-03-0f91e49b4fd6"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:24.150165035Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "compute.googleapis.com/resource_id": "5938196076922728443"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:00:58.689401955Z"
+  },
+  {
+    "insertId": "1w9gbb4fbn98j9",
+    "jsonPayload": {
+      "levelname": "INFO",
+      "message": "--init.display_name"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:24.150170881Z",
+    "severity": "INFO",
+    "labels": {
+      "compute.googleapis.com/zone": "us-central1-b",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/trial_id": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:00:58.689401955Z"
+  },
+  {
+    "insertId": "1w9gbb4fbn98ja",
+    "jsonPayload": {
+      "message": "automl-beans1697993812",
+      "levelname": "INFO"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:24.150176972Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/tpu_worker_id": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:00:58.689401955Z"
+  },
+  {
+    "insertId": "1w9gbb4fbn98jb",
+    "jsonPayload": {
+      "levelname": "INFO",
+      "message": "--init.column_transformations"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:24.150183424Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_type": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:00:58.689401955Z"
+  },
+  {
+    "insertId": "1w9gbb4fbn98jc",
+    "jsonPayload": {
+      "message": "[{\"numeric\": {\"column_name\": \"Area\"}}, {\"numeric\": {\"column_name\": \"Perimeter\"}}, {\"numeric\": {\"column_name\": \"MajorAxisLength\"}}, {\"numeric\": {\"column_name\": \"MinorAxisLength\"}}, {\"numeric\": {\"column_name\": \"AspectRation\"}}, {\"numeric\": {\"column_name\": \"Eccentricity\"}}, {\"numeric\": {\"column_name\": \"ConvexArea\"}}, {\"numeric\": {\"column_name\": \"EquivDiameter\"}}, {\"numeric\": {\"column_name\": \"Extent\"}}, {\"numeric\": {\"column_name\": \"Solidity\"}}, {\"numeric\": {\"column_name\": \"roundness\"}}, {\"numeric\": {\"column_name\": \"Compactness\"}}, {\"numeric\": {\"column_name\": \"ShapeFactor1\"}}, {\"numeric\": {\"column_name\": \"ShapeFactor2\"}}, {\"numeric\": {\"column_name\": \"ShapeFactor3\"}}, {\"numeric\": {\"column_name\": \"ShapeFactor4\"}}, {\"categorical\": {\"column_name\": \"Class\"}}]",
+      "levelname": "INFO"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:24.150190278Z",
+    "severity": "INFO",
+    "labels": {
+      "compute.googleapis.com/zone": "us-central1-b",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/job_id/log_area": "root"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:00:58.689401955Z"
+  },
+  {
+    "insertId": "1w9gbb4fbn98jd",
+    "jsonPayload": {
+      "message": "--method.dataset",
+      "levelname": "INFO"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "workerpool0-0"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:24.150197676Z",
+    "severity": "INFO",
+    "labels": {
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:00:58.689401955Z"
+  },
+  {
+    "insertId": "1w9gbb4fbn98je",
+    "jsonPayload": {
+      "message": "aiplatform://v1/projects/780638309579/locations/us-central1/datasets/8334695062239707136",
+      "levelname": "INFO"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:24.150204645Z",
+    "severity": "INFO",
+    "labels": {
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/tpu_worker_id": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:00:58.689401955Z"
+  },
+  {
+    "insertId": "1w9gbb4fbn98jf",
+    "jsonPayload": {
+      "levelname": "INFO",
+      "message": "method:<bound method AutoMLTabularTrainingJob.run of <google.cloud.aiplatform.training_jobs.AutoMLTabularTrainingJob object at 0x7822c13b82d0>> is being called with parameters {'budget_milli_node_hours': 1000, 'target_column': 'Class', 'dataset': <google.cloud.aiplatform.datasets.tabular_dataset.TabularDataset object at 0x7822c13b8a10> "
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:24.283139026Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/tpu_worker_id": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:00:58.689401955Z"
+  },
+  {
+    "insertId": "1w9gbb4fbn98jg",
+    "jsonPayload": {
+      "message": "resource name: projects/780638309579/locations/us-central1/datasets/8334695062239707136}",
+      "levelname": "INFO"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:24.283192235Z",
+    "severity": "INFO",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_id": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:00:58.689401955Z"
+  },
+  {
+    "insertId": "1w9gbb4fbn98jh",
+    "jsonPayload": {
+      "message": "INFO:google.cloud.aiplatform.training_jobs:View Training:",
+      "levelname": "INFO"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:24.766957547Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/zone": "us-central1-b"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:00:58.689401955Z"
+  },
+  {
+    "insertId": "1w9gbb4fbn98ji",
+    "jsonPayload": {
+      "levelname": "INFO",
+      "message": "https://console.cloud.google.com/ai/platform/locations/us-central1/training/623146909371990016?project=780638309579"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:24.767014987Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_id": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:00:58.689401955Z"
+  },
+  {
+    "insertId": "1w9gbb4fbn98jj",
+    "jsonPayload": {
+      "levelname": "INFO",
+      "message": "INFO:google.cloud.aiplatform.training_jobs:AutoMLTabularTrainingJob projects/780638309579/locations/us-central1/trainingPipelines/623146909371990016 current state:"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:29.903927366Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/tpu_worker_id": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:00:58.689401955Z"
+  },
+  {
+    "insertId": "1w9gbb4fbn98jk",
+    "jsonPayload": {
+      "levelname": "INFO",
+      "message": "PipelineState.PIPELINE_STATE_PENDING"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:29.903972735Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/zone": "us-central1-b"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:00:58.689401955Z"
+  },
+  {
+    "insertId": "1w9gbb4fbn98jl",
+    "jsonPayload": {
+      "message": "INFO:google.cloud.aiplatform.training_jobs:AutoMLTabularTrainingJob projects/780638309579/locations/us-central1/trainingPipelines/623146909371990016 current state:",
+      "levelname": "INFO"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:40.032188427Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_type": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:00:58.689401955Z"
+  },
+  {
+    "insertId": "1w9gbb4fbn98jm",
+    "jsonPayload": {
+      "message": "PipelineState.PIPELINE_STATE_PENDING",
+      "levelname": "INFO"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:00:40.032238807Z",
+    "severity": "INFO",
+    "labels": {
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/tpu_worker_id": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:00:58.689401955Z"
+  },
+  {
+    "insertId": "xkom9afdfy4ap",
+    "jsonPayload": {
+      "message": "INFO:google.cloud.aiplatform.training_jobs:AutoMLTabularTrainingJob projects/780638309579/locations/us-central1/trainingPipelines/623146909371990016 current state:",
+      "levelname": "INFO"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0"
+      }
+    },
+    "timestamp": "2023-10-22T17:01:00.401878314Z",
+    "severity": "INFO",
+    "labels": {
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/zone": "us-central1-b"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:01:03.799418783Z"
+  },
+  {
+    "insertId": "xkom9afdfy4aq",
+    "jsonPayload": {
+      "message": "PipelineState.PIPELINE_STATE_PENDING",
+      "levelname": "INFO"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0"
+      }
+    },
+    "timestamp": "2023-10-22T17:01:00.401910748Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/zone": "us-central1-b"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:01:03.799418783Z"
+  },
+  {
+    "insertId": "13yzt26f87ccht",
+    "jsonPayload": {
+      "message": "INFO:google.cloud.aiplatform.training_jobs:AutoMLTabularTrainingJob projects/780638309579/locations/us-central1/trainingPipelines/623146909371990016 current state:",
+      "levelname": "INFO"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:01:40.946297844Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/job_id/log_area": "root"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:01:43.960832016Z"
+  },
+  {
+    "insertId": "13yzt26f87cchu",
+    "jsonPayload": {
+      "message": "PipelineState.PIPELINE_STATE_PENDING",
+      "levelname": "INFO"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:01:40.946354041Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/resource_id": "5938196076922728443"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:01:43.960832016Z"
+  },
+  {
+    "insertId": "1erya5qfdx8bjx",
+    "jsonPayload": {
+      "message": "INFO:google.cloud.aiplatform.training_jobs:AutoMLTabularTrainingJob projects/780638309579/locations/us-central1/trainingPipelines/623146909371990016 current state:",
+      "levelname": "INFO"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:03:02.053549710Z",
+    "severity": "INFO",
+    "labels": {
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/trial_id": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:03:05.107955795Z"
+  },
+  {
+    "insertId": "1erya5qfdx8bjy",
+    "jsonPayload": {
+      "levelname": "INFO",
+      "message": "PipelineState.PIPELINE_STATE_PENDING"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:03:02.053606173Z",
+    "severity": "INFO",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_id": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:03:05.107955795Z"
+  },
+  {
+    "insertId": "q314mefiv4ro7",
+    "jsonPayload": {
+      "levelname": "INFO",
+      "message": "INFO:google.cloud.aiplatform.training_jobs:AutoMLTabularTrainingJob projects/780638309579/locations/us-central1/trainingPipelines/623146909371990016 current state:"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0"
+      }
+    },
+    "timestamp": "2023-10-22T17:05:44.184257627Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/resource_id": "5938196076922728443"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:05:47.293818440Z"
+  },
+  {
+    "insertId": "q314mefiv4ro8",
+    "jsonPayload": {
+      "message": "PipelineState.PIPELINE_STATE_RUNNING",
+      "levelname": "INFO"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:05:44.184305681Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:05:47.293818440Z"
+  },
+  {
+    "insertId": "vn36icfdb9s10",
+    "jsonPayload": {
+      "levelname": "INFO",
+      "message": "INFO:google.cloud.aiplatform.training_jobs:AutoMLTabularTrainingJob projects/780638309579/locations/us-central1/trainingPipelines/623146909371990016 current state:"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:10:48.033498286Z",
+    "severity": "INFO",
+    "labels": {
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/zone": "us-central1-b"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:10:51.493238571Z"
+  },
+  {
+    "insertId": "vn36icfdb9s11",
+    "jsonPayload": {
+      "message": "PipelineState.PIPELINE_STATE_RUNNING",
+      "levelname": "INFO"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:10:48.033617659Z",
+    "severity": "INFO",
+    "labels": {
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/zone": "us-central1-b"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:10:51.493238571Z"
+  },
+  {
+    "insertId": "z8psotfa1vn2c",
+    "jsonPayload": {
+      "levelname": "INFO",
+      "message": "INFO:google.cloud.aiplatform.training_jobs:AutoMLTabularTrainingJob projects/780638309579/locations/us-central1/trainingPipelines/623146909371990016 current state:"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0"
+      }
+    },
+    "timestamp": "2023-10-22T17:15:51.993336720Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/zone": "us-central1-b"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:15:55.674780423Z"
+  },
+  {
+    "insertId": "z8psotfa1vn2d",
+    "jsonPayload": {
+      "levelname": "INFO",
+      "message": "PipelineState.PIPELINE_STATE_RUNNING"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:15:51.993398780Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_type": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:15:55.674780423Z"
+  },
+  {
+    "insertId": "15wbaxjfayvuzo",
+    "jsonPayload": {
+      "message": "INFO:google.cloud.aiplatform.training_jobs:AutoMLTabularTrainingJob projects/780638309579/locations/us-central1/trainingPipelines/623146909371990016 current state:",
+      "levelname": "INFO"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:20:55.906107148Z",
+    "severity": "INFO",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/zone": "us-central1-b"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:20:58.886833552Z"
+  },
+  {
+    "insertId": "15wbaxjfayvuzp",
+    "jsonPayload": {
+      "message": "PipelineState.PIPELINE_STATE_RUNNING",
+      "levelname": "INFO"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:20:55.906168996Z",
+    "severity": "INFO",
+    "labels": {
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:20:58.886833552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwfz",
+    "jsonPayload": {
+      "message": "Traceback (most recent call last):",
+      "levelname": "ERROR"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.794186528Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwg0",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "  File \"/opt/python3.7/lib/python3.7/site-packages/google/api_core/grpc_helpers.py\", line 67, in error_remapped_callable"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.794247170Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/trial_id": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwg1",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "    return callable_(*args, **kwargs)"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.794355387Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_id": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwg2",
+    "jsonPayload": {
+      "message": "  File \"/opt/python3.7/lib/python3.7/site-packages/grpc/_channel.py\", line 946, in __call__",
+      "levelname": "ERROR"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.794372464Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/trial_type": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwg3",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "    return _end_unary_response_blocking(state, call, False, None)"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.794681919Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/tpu_worker_id": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwg4",
+    "jsonPayload": {
+      "message": "  File \"/opt/python3.7/lib/python3.7/site-packages/grpc/_channel.py\", line 849, in _end_unary_response_blocking",
+      "levelname": "ERROR"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "workerpool0-0"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.794695945Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/zone": "us-central1-b",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwg5",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "    raise _InactiveRpcError(state)"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.794924026Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_id": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwg6",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.794991323Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwg7",
+    "jsonPayload": {
+      "message": "\tstatus = StatusCode.UNAVAILABLE",
+      "levelname": "ERROR"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.795001429Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/trial_id": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwg8",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "\tdetails = \"The service is currently unavailable.\""
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.795009001Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwg9",
+    "jsonPayload": {
+      "message": "\tdebug_error_string = \"{\"created\":\"@1697995352.793333152\",\"description\":\"Error received from peer ipv4:108.177.120.95:443\",\"file\":\"src/core/lib/surface/call.cc\",\"file_line\":1066,\"grpc_message\":\"The service is currently unavailable.\",\"grpc_status\":14}\"",
+      "levelname": "ERROR"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "workerpool0-0"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.795016304Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/job_id/log_area": "root"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwga",
+    "jsonPayload": {
+      "message": ">",
+      "levelname": "ERROR"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.795024467Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/resource_id": "5938196076922728443"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwgb",
+    "jsonPayload": {
+      "message": "",
+      "levelname": "ERROR"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.795030006Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwgc",
+    "jsonPayload": {
+      "message": "The above exception was the direct cause of the following exception:",
+      "levelname": "ERROR"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "workerpool0-0"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.795035129Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/job_id/log_area": "root"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwgd",
+    "jsonPayload": {
+      "message": "",
+      "levelname": "ERROR"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.795039861Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/trial_id": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwge",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "Traceback (most recent call last):"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.795045204Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_id": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwgf",
+    "jsonPayload": {
+      "message": "  File \"/opt/python3.7/lib/python3.7/runpy.py\", line 193, in _run_module_as_main",
+      "levelname": "ERROR"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.795050603Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/tpu_worker_id": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwgg",
+    "jsonPayload": {
+      "message": "    \"__main__\", mod_spec)",
+      "levelname": "ERROR"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.795111660Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/resource_id": "5938196076922728443"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwgh",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "  File \"/opt/python3.7/lib/python3.7/runpy.py\", line 85, in _run_code"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.795120225Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/job_id/log_area": "root"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwgi",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "    exec(code, run_globals)"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.795185401Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/trial_type": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwgj",
+    "jsonPayload": {
+      "message": "  File \"/opt/python3.7/lib/python3.7/site-packages/google_cloud_pipeline_components/aiplatform/remote_runner.py\", line 284, in <module>",
+      "levelname": "ERROR"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.795193697Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/job_id/log_area": "root"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwgk",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "    main()"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.795327472Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/zone": "us-central1-b"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwgl",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "  File \"/opt/python3.7/lib/python3.7/site-packages/google_cloud_pipeline_components/aiplatform/remote_runner.py\", line 280, in main"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.795337944Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwgm",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "    print(runner(args.cls_name, args.method_name, executor_input, kwargs))"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.795437656Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/tpu_worker_id": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwgn",
+    "jsonPayload": {
+      "message": "  File \"/opt/python3.7/lib/python3.7/site-packages/google_cloud_pipeline_components/aiplatform/remote_runner.py\", line 241, in runner",
+      "levelname": "ERROR"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.795446744Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwgo",
+    "jsonPayload": {
+      "message": "    output = method(**serialized_args[METHOD_KEY])",
+      "levelname": "ERROR"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.795547612Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_id": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwgp",
+    "jsonPayload": {
+      "message": "  File \"/opt/python3.7/lib/python3.7/site-packages/google/cloud/aiplatform/training_jobs.py\", line 2534, in run",
+      "levelname": "ERROR"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.795556540Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_type": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwgq",
+    "jsonPayload": {
+      "message": "    sync=sync,",
+      "levelname": "ERROR"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.796250583Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwgr",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "  File \"/opt/python3.7/lib/python3.7/site-packages/google/cloud/aiplatform/base.py\", line 631, in wrapper"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.796317916Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwgs",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "    return method(*args, **kwargs)"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.796388857Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/job_id/log_area": "root"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwgt",
+    "jsonPayload": {
+      "message": "  File \"/opt/python3.7/lib/python3.7/site-packages/google/cloud/aiplatform/training_jobs.py\", line 2683, in _run",
+      "levelname": "ERROR"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.796397816Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/job_id/log_area": "root"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwgu",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "    model=model,"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.797050070Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/job_id/log_area": "root"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwgv",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "  File \"/opt/python3.7/lib/python3.7/site-packages/google/cloud/aiplatform/training_jobs.py\", line 516, in _run_job"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "workerpool0-0"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.797071243Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwgw",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "    model = self._get_model()"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.797200492Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_type": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwgx",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "  File \"/opt/python3.7/lib/python3.7/site-packages/google/cloud/aiplatform/training_jobs.py\", line 603, in _get_model"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "workerpool0-0"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.797216447Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/trial_type": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwgy",
+    "jsonPayload": {
+      "message": "    self._block_until_complete()",
+      "levelname": "ERROR"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.797375126Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/tpu_worker_id": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwgz",
+    "jsonPayload": {
+      "message": "  File \"/opt/python3.7/lib/python3.7/site-packages/google/cloud/aiplatform/training_jobs.py\", line 632, in _block_until_complete",
+      "levelname": "ERROR"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.797386495Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/job_id/log_area": "root"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwh0",
+    "jsonPayload": {
+      "message": "    while self.state not in _PIPELINE_COMPLETE_STATES:",
+      "levelname": "ERROR"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.797549629Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/resource_id": "5938196076922728443"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwh1",
+    "jsonPayload": {
+      "message": "  File \"/opt/python3.7/lib/python3.7/site-packages/google/cloud/aiplatform/training_jobs.py\", line 545, in state",
+      "levelname": "ERROR"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.797561621Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_type": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwh2",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "    self._sync_gca_resource()"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.797735609Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/tpu_worker_id": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwh3",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "  File \"/opt/python3.7/lib/python3.7/site-packages/google/cloud/aiplatform/training_jobs.py\", line 685, in _sync_gca_resource"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.797748441Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwh4",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "    name=self.resource_name"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.797912206Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwh5",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "  File \"/opt/python3.7/lib/python3.7/site-packages/google/cloud/aiplatform_v1/services/pipeline_service/client.py\", line 548, in get_training_pipeline"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "workerpool0-0"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.797925821Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/zone": "us-central1-b",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/job_id/log_area": "root"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwh6",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "    response = rpc(request, retry=retry, timeout=timeout, metadata=metadata,)"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.798224450Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/zone": "us-central1-b"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwh7",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "  File \"/opt/python3.7/lib/python3.7/site-packages/google/api_core/gapic_v1/method.py\", line 145, in __call__"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.798240812Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/job_id/log_area": "root"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwh8",
+    "jsonPayload": {
+      "message": "    return wrapped_func(*args, **kwargs)",
+      "levelname": "ERROR"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.798521103Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/resource_id": "5938196076922728443"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwh9",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "  File \"/opt/python3.7/lib/python3.7/site-packages/google/api_core/grpc_helpers.py\", line 69, in error_remapped_callable"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.798535457Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "compute.googleapis.com/zone": "us-central1-b"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwha",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "    six.raise_from(exceptions.from_grpc_error(exc), exc)"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "task_name": "workerpool0-0"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.798542126Z",
+    "severity": "ERROR",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/zone": "us-central1-b"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwhb",
+    "jsonPayload": {
+      "levelname": "ERROR",
+      "message": "  File \"<string>\", line 3, in raise_from"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.798548049Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/trial_id": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "ml.googleapis.com/trial_type": "",
+      "compute.googleapis.com/zone": "us-central1-b",
+      "compute.googleapis.com/resource_id": "5938196076922728443"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "insertId": "11qzfhlf9whwhc",
+    "jsonPayload": {
+      "message": "google.api_core.exceptions.ServiceUnavailable: 503 The service is currently unavailable.",
+      "levelname": "ERROR"
+    },
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "workerpool0-0",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:32.798752125Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/trial_type": "",
+      "ml.googleapis.com/job_id/log_area": "root",
+      "ml.googleapis.com/tpu_worker_id": "",
+      "compute.googleapis.com/resource_name": "gke-cml-1022-164151--e2-standard-4-43-6e745f34-0n8p",
+      "compute.googleapis.com/resource_id": "5938196076922728443",
+      "ml.googleapis.com/trial_id": "",
+      "compute.googleapis.com/zone": "us-central1-b"
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/workerpool0-0",
+    "receiveTimestamp": "2023-10-22T17:22:36.187374552Z"
+  },
+  {
+    "textPayload": "The replica workerpool0-0 exited with a non-zero status of 1. Termination reason: Error. To find out more about why your job exited please check the logs: https://console.cloud.google.com/logs/viewer?project=780638309579&resource=ml_job%2Fjob_id%2F7361657851825094656&advancedFilter=resource.type%3D%22ml_job%22%0Aresource.labels.job_id%3D%227361657851825094656%22",
+    "insertId": "1w9cpold2k8o",
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "service",
+        "job_id": "7361657851825094656",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6"
+      }
+    },
+    "timestamp": "2023-10-22T17:22:58.809180577Z",
+    "severity": "ERROR",
+    "labels": {
+      "ml.googleapis.com/endpoint": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/ml.googleapis.com%2F7361657851825094656",
+    "receiveTimestamp": "2023-10-22T17:23:00.532829104Z"
+  },
+  {
+    "textPayload": "Finished tearing down training program.",
+    "insertId": "1w9cpold2kcm",
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "service",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:23:47.199431535Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/endpoint": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/ml.googleapis.com%2F7361657851825094656",
+    "receiveTimestamp": "2023-10-22T17:23:48.541103263Z"
+  },
+  {
+    "textPayload": "Job failed.",
+    "insertId": "1w9cpold2kco",
+    "resource": {
+      "type": "ml_job",
+      "labels": {
+        "task_name": "service",
+        "project_id": "qwiklabs-gcp-03-0f91e49b4fd6",
+        "job_id": "7361657851825094656"
+      }
+    },
+    "timestamp": "2023-10-22T17:23:47.416738833Z",
+    "severity": "INFO",
+    "labels": {
+      "ml.googleapis.com/job_state": "FAILED",
+      "ml.googleapis.com/endpoint": ""
+    },
+    "logName": "projects/qwiklabs-gcp-03-0f91e49b4fd6/logs/ml.googleapis.com%2F7361657851825094656",
+    "receiveTimestamp": "2023-10-22T17:23:48.541103263Z"
+  }
+]
