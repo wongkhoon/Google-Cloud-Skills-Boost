@@ -1,0 +1,507 @@
+
+
+
+
+
+
+
+
+
+
+Welcome to Cloud Shell! Type "help" to get started.
+Your Cloud Platform project in this session is set to qwiklabs-gcp-04-e2d9bcee954f.
+Use “gcloud config set project [PROJECT_ID]” to change to a different project.
+student_03_84d2c778f44b@cloudshell:~ (qwiklabs-gcp-04-e2d9bcee954f)$ 
+student_03_84d2c778f44b@cloudshell:~ (qwiklabs-gcp-04-e2d9bcee954f)$ 
+student_03_84d2c778f44b@cloudshell:~ (qwiklabs-gcp-04-e2d9bcee954f)$ gcloud auth list
+Credentialed Accounts
+
+ACTIVE: *
+ACCOUNT: student-03-84d2c778f44b@qwiklabs.net
+
+To set the active account, run:
+    $ gcloud config set account `ACCOUNT`
+
+student_03_84d2c778f44b@cloudshell:~ (qwiklabs-gcp-04-e2d9bcee954f)$ 
+student_03_84d2c778f44b@cloudshell:~ (qwiklabs-gcp-04-e2d9bcee954f)$ gcloud config list project
+[core]
+project = qwiklabs-gcp-04-e2d9bcee954f
+
+Your active configuration is: [cloudshell-26164]
+student_03_84d2c778f44b@cloudshell:~ (qwiklabs-gcp-04-e2d9bcee954f)$ 
+student_03_84d2c778f44b@cloudshell:~ (qwiklabs-gcp-04-e2d9bcee954f)$ 
+student_03_84d2c778f44b@cloudshell:~ (qwiklabs-gcp-04-e2d9bcee954f)$ gcloud compute ssh lab-vm --zone us-west1-c
+WARNING: The private SSH key file for gcloud does not exist.
+WARNING: The public SSH key file for gcloud does not exist.
+WARNING: You do not have an SSH key for gcloud.
+WARNING: SSH keygen will be executed to generate a key.
+This tool needs to create the directory [/home/student_03_84d2c778f44b/.ssh] before being able to generate SSH keys.
+
+Do you want to continue (Y/n)?  Y
+
+Generating public/private rsa key pair.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/student_03_84d2c778f44b/.ssh/google_compute_engine
+Your public key has been saved in /home/student_03_84d2c778f44b/.ssh/google_compute_engine.pub
+The key fingerprint is:
+SHA256:WcG4lRTKx6if9qabH3ft9phMrkOaEGjP9UJY0bO6H/0 student_03_84d2c778f44b@cs-235364587078-default
+The key's randomart image is:
++---[RSA 3072]----+
+|         +==     |
+|       ..+=.o    |
+|       .+=+  o   |
+|      o.++o .    |
+|     ..oS+ o     |
+|       .+.o o. . |
+|        +..*o + .|
+|       . o=o.* =.|
+|        +=o.oo=.E|
++----[SHA256]-----+
+Warning: Permanently added 'compute.2753484771841228727' (ED25519) to the list of known hosts.
+Linux lab-vm 5.10.0-30-cloud-amd64 #1 SMP Debian 5.10.218-1 (2024-06-01) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ export DOCKER_TAG=gcr.io/ql-shared-resources-test/defect_solution@sha256:776fd8c65304ac017f5b9a986a1b8189695b7abbff6aa0e4ef693cstudent-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ export VISERVING_CPU_DOCKER_WITH_MODEL=${DOCKER_TAG}
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ export HTTP_PORT=8602
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ export LOCAL_METRIC_PORT=8603
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ docker pull ${VISERVING_CPU_DOCKER_WITH_MODEL}
+invalid checksum digest length
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ docker pull ${VISERVING_CPU_DOCKER_WITH_MODEL}
+invalid checksum digest length
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ docker pull ${VISERVING_CPU_DOCKER_WITH_MODEL}
+invalid checksum digest length
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ docker pull ${VISERVING_CPU_DOCKER_WITH_MODEL}^C
+student-03-84d2c778f44b@lab-vm:~$ docker pull ${VISERVING_CPU_DOCKER_WITH_MODEL}
+invalid checksum digest length
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ export DOCKER_TAG=gcr.io/ql-shared-resources-test/defect_solution@sha256:776fd8c65304ac017f5b9a986a1b8189695b7abbff6aa0e4ef693c46c7122f4c
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ docker pull ${VISERVING_CPU_DOCKER_WITH_MODEL}
+invalid checksum digest length
+student-03-84d2c778f44b@lab-vm:~$ export HTTP_PORT=8602
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ export LOCAL_METRIC_PORT=8603                                                                                                  
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ export VISERVING_CPU_DOCKER_WITH_MODEL=${DOCKER_TAG}
+export HTTP_PORT=8602
+export LOCAL_METRIC_PORT=8603
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ docker pull ${VISERVING_CPU_DOCKER_WITH_MODEL}
+gcr.io/ql-shared-resources-test/defect_solution@sha256:776fd8c65304ac017f5b9a986a1b8189695b7abbff6aa0e4ef693c46c7122f4c: Pulling from ql-shared-resources-test/defect_solution
+171857c49d0f: Pulling fs layer 
+419640447d26: Pull complete 
+61e52f862619: Pull complete 
+c74c8c6e8ac3: Pull complete 
+3cee9c45f2dc: Pull complete 
+ee26d0b3d4d2: Pull complete 
+73ffbf6e2f06: Pull complete 
+841930f746ca: Pull complete 
+94e039bd94a8: Pull complete 
+9faf74a7848f: Pull complete 
+c79e83c8dbfb: Pull complete 
+bfdeb9896993: Pull complete 
+394f6a63a5e3: Pull complete 
+f8b64c9513f1: Pull complete 
+Digest: sha256:776fd8c65304ac017f5b9a986a1b8189695b7abbff6aa0e4ef693c46c7122f4c
+Status: Downloaded newer image for gcr.io/ql-shared-resources-test/defect_solution@sha256:776fd8c65304ac017f5b9a986a1b8189695b7abbff6aa0e4ef693c46c7122f4c
+gcr.io/ql-shared-resources-test/defect_solution@sha256:776fd8c65304ac017f5b9a986a1b8189695b7abbff6aa0e4ef693c46c7122f4c
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ docker run -v /secrets:/secrets --rm -d --name "product_inspection" \
+> --network="host" \
+> -p ${HTTP_PORT}:8602 \
+> -p ${LOCAL_METRIC_PORT}:8603 \
+> -t ${VISERVING_CPU_DOCKER_WITH_MODEL} \
+> --metric_project_id="${PROJECT_ID}" \
+> --use_default_credentials=false \
+> --service_account_credentials_json=/secrets/assembly-usage-reporter.json
+WARNING: Published ports are discarded when using host network mode
+d779eca095a389ce6eb87cb6f2993824e9335afae86d0d4c806cb88611aaeb87
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ [200~docker container ls~
+-bash: [200~docker: command not found
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ docker container ls
+CONTAINER ID   IMAGE                                             COMMAND                  CREATED         STATUS         PORTS     NAMES
+d779eca095a3   gcr.io/ql-shared-resources-test/defect_solution   "/google/visual_insp…"   2 minutes ago   Up 2 minutes             product_inspection
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ gsutil cp gs://cloud-training/gsp895/prediction_script.py .
+Copying gs://cloud-training/gsp895/prediction_script.py...
+/ [1 files][  4.1 KiB/  4.1 KiB]                                                
+Operation completed over 1 objects/4.1 KiB.                                      
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ export PROJECT_ID=$(gcloud config get-value core/project)
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ gsutil mb gs://${PROJECT_ID}
+Creating gs://qwiklabs-gcp-04-e2d9bcee954f/...
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ gsutil -m cp gs://cloud-training/gsp897/cosmetic-test-data/*.png \
+gs://${PROJECT_ID}/cosmetic-test-data/
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_0765.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_07656.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_0766.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_0768.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_07692.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_07683.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_0767.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_07664.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_0769.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_07691.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_07695.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_07696.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_07697.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_0770.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_07700.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_07703.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_07706.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_0771.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_07711.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_07712.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_07715.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_07716.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_0772.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_07720.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_07721.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_07723.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_07722.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_07726.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_0773.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_07730.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_07732.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_07733.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_07735.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_0774.png [Content-Type=image/png]...
+Copying gs://cloud-training/gsp897/cosmetic-test-data/IMG_07742.png [Content-Type=image/png]...
+- [35/35 files][  5.4 MiB/  5.4 MiB] 100% Done                                  
+Operation completed over 35 objects/5.4 MiB.                                     
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ gsutil cp gs://${PROJECT_ID}/cosmetic-test-data/IMG_07703.png .
+Copying gs://qwiklabs-gcp-04-e2d9bcee954f/cosmetic-test-data/IMG_07703.png...
+/ [1 files][137.7 KiB/137.7 KiB]                                                
+Operation completed over 1 objects/137.7 KiB.                                    
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ python3 ./prediction_script.py --input_image_file=./IMG_07703.png  --port=8602 --output_result_file=def_prediction_result.json
+Processed image ./IMG_07703.png in 1.3490989208221436s.
+{
+  "predictionResult": {
+    "annotationsGroups": [
+      {
+        "annotationSet": {
+          "name": "projects/624839602356/locations/us-central1/datasets/1923855077538267136/annotationSets/2435347886779662336",
+          "displayName": "Predicted Masks Regions",
+          "mask": {},
+          "createTime": "2021-08-23T12:54:20.313205Z",
+          "updateTime": "2021-08-23T12:54:20.313205Z"
+        },
+        "annotations": [
+          {
+            "name": "localAnnotations/1",
+            "annotationSetId": "2435347886779662336",
+            "mask": {
+              "confidenceMask": {
+                "imageBytes": "iVBORw0KGgoAAAANSUhEUgAAAaAAAAGUCAAAAABWtqk+AAAEpElEQVR4Xu3dTW9UVRwH4LZQERBRJIpBTWSjxsQY3LjBuHGjH8Ev4cKFOxUiLiQkaKIxCrrQGFyIGMREYqIGFVAobwqECsiLlBRaSjvTzsy9MxamlLl/EgLN4JnF8+zOPb/dyXmdc+90dQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMCteDc+aKPu+IBb9N4jSxYd63stPm6X2fEBt+TDF+be0Tt74ZKHX441dIJfLlRrWZZXRo59F6vapCc+4Oa9tevxu2b1dHd3z7rj7qWxkuTePDxSzeuX5bWxM+tjdXuYg2Zs3YtLe3uai6zu7t75D4XqNtFAM7Vl+aLe6TXw5CD3QGtl+2igGdqxbMHslj1KPRu6VmgnDTQzm5+cM6t1D1mvDLaU2kgDzciWFfMKe/xGXj7bUiSxvrHm6m1abeRAzLSJfdAM7Hp0TvGIrF4Z2F54QErbLk1tf67Kx09+HkOksvLAaBbapzr4fUyRyvHR0H3qeW10b0yRytY4vNXziTObY4pUNp2rZMX2yUp/vR1TJLL+wFAlTD+10r6YIpVvSpW4PKhcPBRTbWYfdPOe6p3VXdj/1KtDu59ofUBKu8eK/SevjZ/8MoZIZfW+kVpr81yefk5/EVOksuZsuVacf2qlk1tiimQOTRTGtzybOPdzzJBOX6k4/VQvHnw/Zkhm1cGx4va0NvRjzJDOqlPjhfbJ87HfYoaE9pdb2yfPxge/jhES6hst9J/sUl9MkNAn/aXi+FbeHSMktGk4HI9mAzFyezmLu6F1y+cVbld11Su/txZJ653DxfFtcoA7EjO3mXtxN7BhxYNzikNMNri1UCallQPF/c/kBDTk+LqD7L+ufYb1nw7yR3H/U88rNqgdZH3Y/9TziRMfxBDJfHr15blp1dNrY4h0joTrVVmlP0ZIaPul4vlOdXhPjJDQzovF+we18y6PdpA3TpWK9w/yUZfjO8m+cD8kG/cDQyfZE14vyctHY+R/5DQ7+Ozvx+ZOff2gqVEb2NRSJK2N1+1/ssENMUQya09Ww/lbProthkjm4+Pjsf9M3K7Xt2+S34Na7Fy24NrXXa5oZIPu93aMcL33suo5PwB1jK+GYvvklbMbY4pUVvdPxPln/IQFXOfYORLWb7VLe1fHEMn8cD5+PmR0R8yk4CRhytI5xfdPG9V/n20tp2KZPeXewgK70agP/9RSJrWPCl94ybOJ4W9jJA09qGnZ1e/DXtHIxv556VoxJXNQU95oNKYLjWzk4DMtlSlpoKY8n26fRj0vHXm+pS4pQ1xTNtmFroxxja7JGejMc7E+GQ3UlOX1nskWakz2n6xa7qBXTDRQ09Gnu+bO7mnU61n5wok/X43V6fj/oCm/3r/wzt68NlHq3/F6rEtJD5rSX168cH555MLZDvsjID3oqjWL77vn3OlX4mM6SEeNbQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB3nP+Y8oDaPpu0GAAAAAElFTkSuQmCC"
+              },
+              "categoryMask": {
+                "imageBytes": "iVBORw0KGgoAAAANSUhEUgAAAaAAAAGUCAIAAAD8v2G1AAADwklEQVR4Xu3dzU0DMRSFUYNojhpYUhdLaqA9kCIhNAmZjJ9/npNzli7g052MlSkFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIJuvj7ft0cN72h4ASznv2uv75+bkYQkcrOo8bb807kTgYElX6naicT9etgdAbrtp45cFBys5VDcj7nl7AGR1qG4UgYNVqFsFgYMFqFsdgYPs1K2awEFq6hbhLSrkFambV6jFgoO0InXjxIKDjIJ1M99OBA5yCaatqNsfAgeJqFtbAgdZqFtzAgcpqFsPAgeTSVs/AgczqVtX7sHBwtTtOgsOpgnON3XbJXAwQTBtRd1uI3AwmroN45sMsBJpO8SCg6Ei803djhI4GETaxhM4GEHdpnAPDlJTtwgLDrqrm2/SFidw0FFd2oq6NSJw0Iu6Tec3OOiium40ZMFBe5G6mW8NWXDQWKRutGXBQUvBuplvbVlwkIW6NWfBQTOR+aZuPQgcNBBJW1G3bgQOotQtLf8HB9NIW28WHIRUzzd1G0DgoJ66JSdwUKM6bUXdBnIPDoZSt5EsODiser6p22DeosIB1WljCgsObhWsm/k2nsDBTdRtRQIH+9RtUd6iwo5g3ZjIgoNr4nUz3yYSOPiXuq1O4OAydbsDfoODLtQtAwsOLojMN2nLw4KDltQtFYED7pZHVNiqfj4137Kx4KANdUtI4KABdctJ4CBK3dISOAhRt8wEDrhbAgf1zLfkXBOBC3ZvikjbEnyTAY6RtoVYcHDZ+YiTNuDenJcOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsvsGviKguvi/vV8AAAAASUVORK5CYII="
+              },
+              "annotationSpecColors": [
+                {
+                  "annotationSpecId": "3513930310720946176",
+                  "color": {
+                    "red": 0.717647076,
+                    "green": 0.615686297,
+                    "blue": 0.356862754
+                  },
+                  "annotationSpecDisplayName": "scratch"
+                },
+                {
+                  "annotationSpecId": "4043103266936979456",
+                  "color": {},
+                  "annotationSpecDisplayName": "none"
+                }
+              ]
+            },
+            "source": {
+              "type": "MACHINE_PRODUCED",
+              "sourceModel": "projects/624839602356/locations/us-central1/solutions/6673419854088765440/modules/9138120303283535872/models/424534633623846912"
+            }
+          }
+        ]
+      },
+      {
+        "annotationSet": {
+          "name": "projects/624839602356/locations/us-central1/datasets/1923855077538267136/annotationSets/4948356478852399104",
+          "displayName": "Predicted Classification Labels",
+          "classificationLabel": {},
+          "createTime": "2021-08-23T12:54:20.416215Z",
+          "updateTime": "2021-08-23T12:54:20.416215Z"
+        },
+        "annotations": [
+          {
+            "name": "localAnnotations/0",
+            "annotationSpecId": "2516382993258381312",
+            "annotationSetId": "4948356478852399104",
+            "classificationLabel": {
+              "confidenceScore": 0.994830489
+            },
+            "source": {
+              "type": "MACHINE_PRODUCED",
+              "sourceModel": "projects/624839602356/locations/us-central1/solutions/6673419854088765440/modules/9138120303283535872/models/424534633623846912"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "predictionLatency": "1.288236728s"
+}
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ python3 ./prediction_script.py --input_image_file=./IMG_07703.png  --port=8602 --output_result_file=defective_product.json
+Processed image ./IMG_07703.png in 0.39891505241394043s.
+{
+  "predictionResult": {
+    "annotationsGroups": [
+      {
+        "annotationSet": {
+          "name": "projects/624839602356/locations/us-central1/datasets/1923855077538267136/annotationSets/2435347886779662336",
+          "displayName": "Predicted Masks Regions",
+          "mask": {},
+          "createTime": "2021-08-23T12:54:20.313205Z",
+          "updateTime": "2021-08-23T12:54:20.313205Z"
+        },
+        "annotations": [
+          {
+            "name": "localAnnotations/1",
+            "annotationSetId": "2435347886779662336",
+            "mask": {
+              "confidenceMask": {
+                "imageBytes": "iVBORw0KGgoAAAANSUhEUgAAAaAAAAGUCAAAAABWtqk+AAAEpElEQVR4Xu3dTW9UVRwH4LZQERBRJIpBTWSjxsQY3LjBuHGjH8Ev4cKFOxUiLiQkaKIxCrrQGFyIGMREYqIGFVAobwqECsiLlBRaSjvTzsy9MxamlLl/EgLN4JnF8+zOPb/dyXmdc+90dQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMCteDc+aKPu+IBb9N4jSxYd63stPm6X2fEBt+TDF+be0Tt74ZKHX441dIJfLlRrWZZXRo59F6vapCc+4Oa9tevxu2b1dHd3z7rj7qWxkuTePDxSzeuX5bWxM+tjdXuYg2Zs3YtLe3uai6zu7t75D4XqNtFAM7Vl+aLe6TXw5CD3QGtl+2igGdqxbMHslj1KPRu6VmgnDTQzm5+cM6t1D1mvDLaU2kgDzciWFfMKe/xGXj7bUiSxvrHm6m1abeRAzLSJfdAM7Hp0TvGIrF4Z2F54QErbLk1tf67Kx09+HkOksvLAaBbapzr4fUyRyvHR0H3qeW10b0yRytY4vNXziTObY4pUNp2rZMX2yUp/vR1TJLL+wFAlTD+10r6YIpVvSpW4PKhcPBRTbWYfdPOe6p3VXdj/1KtDu59ofUBKu8eK/SevjZ/8MoZIZfW+kVpr81yefk5/EVOksuZsuVacf2qlk1tiimQOTRTGtzybOPdzzJBOX6k4/VQvHnw/Zkhm1cGx4va0NvRjzJDOqlPjhfbJ87HfYoaE9pdb2yfPxge/jhES6hst9J/sUl9MkNAn/aXi+FbeHSMktGk4HI9mAzFyezmLu6F1y+cVbld11Su/txZJ653DxfFtcoA7EjO3mXtxN7BhxYNzikNMNri1UCallQPF/c/kBDTk+LqD7L+ufYb1nw7yR3H/U88rNqgdZH3Y/9TziRMfxBDJfHr15blp1dNrY4h0joTrVVmlP0ZIaPul4vlOdXhPjJDQzovF+we18y6PdpA3TpWK9w/yUZfjO8m+cD8kG/cDQyfZE14vyctHY+R/5DQ7+Ozvx+ZOff2gqVEb2NRSJK2N1+1/ssENMUQya09Ww/lbProthkjm4+Pjsf9M3K7Xt2+S34Na7Fy24NrXXa5oZIPu93aMcL33suo5PwB1jK+GYvvklbMbY4pUVvdPxPln/IQFXOfYORLWb7VLe1fHEMn8cD5+PmR0R8yk4CRhytI5xfdPG9V/n20tp2KZPeXewgK70agP/9RSJrWPCl94ybOJ4W9jJA09qGnZ1e/DXtHIxv556VoxJXNQU95oNKYLjWzk4DMtlSlpoKY8n26fRj0vHXm+pS4pQ1xTNtmFroxxja7JGejMc7E+GQ3UlOX1nskWakz2n6xa7qBXTDRQ09Gnu+bO7mnU61n5wok/X43V6fj/oCm/3r/wzt68NlHq3/F6rEtJD5rSX168cH555MLZDvsjID3oqjWL77vn3OlX4mM6SEeNbQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB3nP+Y8oDaPpu0GAAAAAElFTkSuQmCC"
+              },
+              "categoryMask": {
+                "imageBytes": "iVBORw0KGgoAAAANSUhEUgAAAaAAAAGUCAIAAAD8v2G1AAADwklEQVR4Xu3dzU0DMRSFUYNojhpYUhdLaqA9kCIhNAmZjJ9/npNzli7g052MlSkFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIJuvj7ft0cN72h4ASznv2uv75+bkYQkcrOo8bb807kTgYElX6naicT9etgdAbrtp45cFBys5VDcj7nl7AGR1qG4UgYNVqFsFgYMFqFsdgYPs1K2awEFq6hbhLSrkFambV6jFgoO0InXjxIKDjIJ1M99OBA5yCaatqNsfAgeJqFtbAgdZqFtzAgcpqFsPAgeTSVs/AgczqVtX7sHBwtTtOgsOpgnON3XbJXAwQTBtRd1uI3AwmroN45sMsBJpO8SCg6Ei803djhI4GETaxhM4GEHdpnAPDlJTtwgLDrqrm2/SFidw0FFd2oq6NSJw0Iu6Tec3OOiium40ZMFBe5G6mW8NWXDQWKRutGXBQUvBuplvbVlwkIW6NWfBQTOR+aZuPQgcNBBJW1G3bgQOotQtLf8HB9NIW28WHIRUzzd1G0DgoJ66JSdwUKM6bUXdBnIPDoZSt5EsODiser6p22DeosIB1WljCgsObhWsm/k2nsDBTdRtRQIH+9RtUd6iwo5g3ZjIgoNr4nUz3yYSOPiXuq1O4OAydbsDfoODLtQtAwsOLojMN2nLw4KDltQtFYED7pZHVNiqfj4137Kx4KANdUtI4KABdctJ4CBK3dISOAhRt8wEDrhbAgf1zLfkXBOBC3ZvikjbEnyTAY6RtoVYcHDZ+YiTNuDenJcOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsvsGviKguvi/vV8AAAAASUVORK5CYII="
+              },
+              "annotationSpecColors": [
+                {
+                  "annotationSpecId": "3513930310720946176",
+                  "color": {
+                    "red": 0.717647076,
+                    "green": 0.615686297,
+                    "blue": 0.356862754
+                  },
+                  "annotationSpecDisplayName": "scratch"
+                },
+                {
+                  "annotationSpecId": "4043103266936979456",
+                  "color": {},
+                  "annotationSpecDisplayName": "none"
+                }
+              ]
+            },
+            "source": {
+              "type": "MACHINE_PRODUCED",
+              "sourceModel": "projects/624839602356/locations/us-central1/solutions/6673419854088765440/modules/9138120303283535872/models/424534633623846912"
+            }
+          }
+        ]
+      },
+      {
+        "annotationSet": {
+          "name": "projects/624839602356/locations/us-central1/datasets/1923855077538267136/annotationSets/4948356478852399104",
+          "displayName": "Predicted Classification Labels",
+          "classificationLabel": {},
+          "createTime": "2021-08-23T12:54:20.416215Z",
+          "updateTime": "2021-08-23T12:54:20.416215Z"
+        },
+        "annotations": [
+          {
+            "name": "localAnnotations/0",
+            "annotationSpecId": "2516382993258381312",
+            "annotationSetId": "4948356478852399104",
+            "classificationLabel": {
+              "confidenceScore": 0.994830489
+            },
+            "source": {
+              "type": "MACHINE_PRODUCED",
+              "sourceModel": "projects/624839602356/locations/us-central1/solutions/6673419854088765440/modules/9138120303283535872/models/424534633623846912"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "predictionLatency": "0.387398143s"
+}
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ gsutil cp gs://${PROJECT_ID}/cosmetic-test-data/IMG_0769.png.png .
+CommandException: No URLs matched: gs://qwiklabs-gcp-04-e2d9bcee954f/cosmetic-test-data/IMG_0769.png.png
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ gsutil cp gs://${PROJECT_ID}/cosmetic-test-data/IMG_0769.png .
+Copying gs://qwiklabs-gcp-04-e2d9bcee954f/cosmetic-test-data/IMG_0769.png...
+/ [1 files][204.0 KiB/204.0 KiB]                                                
+Operation completed over 1 objects/204.0 KiB.                                    
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ python3 ./prediction_script.py --input_image_file=./IMG_07703.png  --port=8602 --output_result_file=non_defective_product_result.json
+Processed image ./IMG_07703.png in 0.3892850875854492s.
+{
+  "predictionResult": {
+    "annotationsGroups": [
+      {
+        "annotationSet": {
+          "name": "projects/624839602356/locations/us-central1/datasets/1923855077538267136/annotationSets/2435347886779662336",
+          "displayName": "Predicted Masks Regions",
+          "mask": {},
+          "createTime": "2021-08-23T12:54:20.313205Z",
+          "updateTime": "2021-08-23T12:54:20.313205Z"
+        },
+        "annotations": [
+          {
+            "name": "localAnnotations/1",
+            "annotationSetId": "2435347886779662336",
+            "mask": {
+              "confidenceMask": {
+                "imageBytes": "iVBORw0KGgoAAAANSUhEUgAAAaAAAAGUCAAAAABWtqk+AAAEpElEQVR4Xu3dTW9UVRwH4LZQERBRJIpBTWSjxsQY3LjBuHGjH8Ev4cKFOxUiLiQkaKIxCrrQGFyIGMREYqIGFVAobwqECsiLlBRaSjvTzsy9MxamlLl/EgLN4JnF8+zOPb/dyXmdc+90dQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMCteDc+aKPu+IBb9N4jSxYd63stPm6X2fEBt+TDF+be0Tt74ZKHX441dIJfLlRrWZZXRo59F6vapCc+4Oa9tevxu2b1dHd3z7rj7qWxkuTePDxSzeuX5bWxM+tjdXuYg2Zs3YtLe3uai6zu7t75D4XqNtFAM7Vl+aLe6TXw5CD3QGtl+2igGdqxbMHslj1KPRu6VmgnDTQzm5+cM6t1D1mvDLaU2kgDzciWFfMKe/xGXj7bUiSxvrHm6m1abeRAzLSJfdAM7Hp0TvGIrF4Z2F54QErbLk1tf67Kx09+HkOksvLAaBbapzr4fUyRyvHR0H3qeW10b0yRytY4vNXziTObY4pUNp2rZMX2yUp/vR1TJLL+wFAlTD+10r6YIpVvSpW4PKhcPBRTbWYfdPOe6p3VXdj/1KtDu59ofUBKu8eK/SevjZ/8MoZIZfW+kVpr81yefk5/EVOksuZsuVacf2qlk1tiimQOTRTGtzybOPdzzJBOX6k4/VQvHnw/Zkhm1cGx4va0NvRjzJDOqlPjhfbJ87HfYoaE9pdb2yfPxge/jhES6hst9J/sUl9MkNAn/aXi+FbeHSMktGk4HI9mAzFyezmLu6F1y+cVbld11Su/txZJ653DxfFtcoA7EjO3mXtxN7BhxYNzikNMNri1UCallQPF/c/kBDTk+LqD7L+ufYb1nw7yR3H/U88rNqgdZH3Y/9TziRMfxBDJfHr15blp1dNrY4h0joTrVVmlP0ZIaPul4vlOdXhPjJDQzovF+we18y6PdpA3TpWK9w/yUZfjO8m+cD8kG/cDQyfZE14vyctHY+R/5DQ7+Ozvx+ZOff2gqVEb2NRSJK2N1+1/ssENMUQya09Ww/lbProthkjm4+Pjsf9M3K7Xt2+S34Na7Fy24NrXXa5oZIPu93aMcL33suo5PwB1jK+GYvvklbMbY4pUVvdPxPln/IQFXOfYORLWb7VLe1fHEMn8cD5+PmR0R8yk4CRhytI5xfdPG9V/n20tp2KZPeXewgK70agP/9RSJrWPCl94ybOJ4W9jJA09qGnZ1e/DXtHIxv556VoxJXNQU95oNKYLjWzk4DMtlSlpoKY8n26fRj0vHXm+pS4pQ1xTNtmFroxxja7JGejMc7E+GQ3UlOX1nskWakz2n6xa7qBXTDRQ09Gnu+bO7mnU61n5wok/X43V6fj/oCm/3r/wzt68NlHq3/F6rEtJD5rSX168cH555MLZDvsjID3oqjWL77vn3OlX4mM6SEeNbQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB3nP+Y8oDaPpu0GAAAAAElFTkSuQmCC"
+              },
+              "categoryMask": {
+                "imageBytes": "iVBORw0KGgoAAAANSUhEUgAAAaAAAAGUCAIAAAD8v2G1AAADwklEQVR4Xu3dzU0DMRSFUYNojhpYUhdLaqA9kCIhNAmZjJ9/npNzli7g052MlSkFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIJuvj7ft0cN72h4ASznv2uv75+bkYQkcrOo8bb807kTgYElX6naicT9etgdAbrtp45cFBys5VDcj7nl7AGR1qG4UgYNVqFsFgYMFqFsdgYPs1K2awEFq6hbhLSrkFambV6jFgoO0InXjxIKDjIJ1M99OBA5yCaatqNsfAgeJqFtbAgdZqFtzAgcpqFsPAgeTSVs/AgczqVtX7sHBwtTtOgsOpgnON3XbJXAwQTBtRd1uI3AwmroN45sMsBJpO8SCg6Ei803djhI4GETaxhM4GEHdpnAPDlJTtwgLDrqrm2/SFidw0FFd2oq6NSJw0Iu6Tec3OOiium40ZMFBe5G6mW8NWXDQWKRutGXBQUvBuplvbVlwkIW6NWfBQTOR+aZuPQgcNBBJW1G3bgQOotQtLf8HB9NIW28WHIRUzzd1G0DgoJ66JSdwUKM6bUXdBnIPDoZSt5EsODiser6p22DeosIB1WljCgsObhWsm/k2nsDBTdRtRQIH+9RtUd6iwo5g3ZjIgoNr4nUz3yYSOPiXuq1O4OAydbsDfoODLtQtAwsOLojMN2nLw4KDltQtFYED7pZHVNiqfj4137Kx4KANdUtI4KABdctJ4CBK3dISOAhRt8wEDrhbAgf1zLfkXBOBC3ZvikjbEnyTAY6RtoVYcHDZ+YiTNuDenJcOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsvsGviKguvi/vV8AAAAASUVORK5CYII="
+              },
+              "annotationSpecColors": [
+                {
+                  "annotationSpecId": "3513930310720946176",
+                  "color": {
+                    "red": 0.717647076,
+                    "green": 0.615686297,
+                    "blue": 0.356862754
+                  },
+                  "annotationSpecDisplayName": "scratch"
+                },
+                {
+                  "annotationSpecId": "4043103266936979456",
+                  "color": {},
+                  "annotationSpecDisplayName": "none"
+                }
+              ]
+            },
+            "source": {
+              "type": "MACHINE_PRODUCED",
+              "sourceModel": "projects/624839602356/locations/us-central1/solutions/6673419854088765440/modules/9138120303283535872/models/424534633623846912"
+            }
+          }
+        ]
+      },
+      {
+        "annotationSet": {
+          "name": "projects/624839602356/locations/us-central1/datasets/1923855077538267136/annotationSets/4948356478852399104",
+          "displayName": "Predicted Classification Labels",
+          "classificationLabel": {},
+          "createTime": "2021-08-23T12:54:20.416215Z",
+          "updateTime": "2021-08-23T12:54:20.416215Z"
+        },
+        "annotations": [
+          {
+            "name": "localAnnotations/0",
+            "annotationSpecId": "2516382993258381312",
+            "annotationSetId": "4948356478852399104",
+            "classificationLabel": {
+              "confidenceScore": 0.994830489
+            },
+            "source": {
+              "type": "MACHINE_PRODUCED",
+              "sourceModel": "projects/624839602356/locations/us-central1/solutions/6673419854088765440/modules/9138120303283535872/models/424534633623846912"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "predictionLatency": "0.378581731s"
+}
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ date
+Sun Jul 28 19:53:11 UTC 2024
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ python3 ./prediction_script.py --input_image_file=./IMG_0769.png  --port=8602 --output_result_file=non_defective_product_result
+.json
+Processed image ./IMG_0769.png in 0.3771657943725586s.
+{
+  "predictionResult": {
+    "annotationsGroups": [
+      {
+        "annotationSet": {
+          "name": "projects/624839602356/locations/us-central1/datasets/1923855077538267136/annotationSets/2435347886779662336",
+          "displayName": "Predicted Masks Regions",
+          "mask": {},
+          "createTime": "2021-08-23T12:54:20.313205Z",
+          "updateTime": "2021-08-23T12:54:20.313205Z"
+        },
+        "annotations": [
+          {
+            "name": "localAnnotations/1",
+            "annotationSetId": "2435347886779662336",
+            "mask": {
+              "confidenceMask": {
+                "imageBytes": "iVBORw0KGgoAAAANSUhEUgAAAaAAAAGUCAAAAABWtqk+AAAAuUlEQVR4Xu3BAQEAAACCIP+vbkhAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPwakjIAAYuD8gQAAAAASUVORK5CYII="
+              },
+              "categoryMask": {
+                "imageBytes": "iVBORw0KGgoAAAANSUhEUgAAAaAAAAGUCAIAAAD8v2G1AAAB/0lEQVR4Xu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GSzfQABc4gCiAAAAABJRU5ErkJggg=="
+              },
+              "annotationSpecColors": [
+                {
+                  "annotationSpecId": "4043103266936979456",
+                  "color": {},
+                  "annotationSpecDisplayName": "none"
+                }
+              ]
+            },
+            "source": {
+              "type": "MACHINE_PRODUCED",
+              "sourceModel": "projects/624839602356/locations/us-central1/solutions/6673419854088765440/modules/9138120303283535872/models/424534633623846912"
+            }
+          }
+        ]
+      },
+      {
+        "annotationSet": {
+          "name": "projects/624839602356/locations/us-central1/datasets/1923855077538267136/annotationSets/4948356478852399104",
+          "displayName": "Predicted Classification Labels",
+          "classificationLabel": {},
+          "createTime": "2021-08-23T12:54:20.416215Z",
+          "updateTime": "2021-08-23T12:54:20.416215Z"
+        },
+        "annotations": [
+          {
+            "name": "localAnnotations/0",
+            "annotationSpecId": "2516382993258381312",
+            "annotationSetId": "4948356478852399104",
+            "classificationLabel": {
+              "confidenceScore": 9.68374297e-05
+            },
+            "source": {
+              "type": "MACHINE_PRODUCED",
+              "sourceModel": "projects/624839602356/locations/us-central1/solutions/6673419854088765440/modules/9138120303283535872/models/424534633623846912"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "predictionLatency": "0.364496039s"
+}
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ date
+Sun Jul 28 19:54:53 UTC 2024
+student-03-84d2c778f44b@lab-vm:~$ 
+student-03-84d2c778f44b@lab-vm:~$ 
